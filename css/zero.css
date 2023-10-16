@@ -1,0 +1,57 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	position: relative;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	min-height: 100vh;
+	text-rendering: optimizeSpeed;
+	scroll-behavior: smooth;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+a,
+a.text:active,
+a.text:hover,
+a.text {
+	text-decoration: none;
+	color: #000;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+select {
+	/* for Firefox */
+	-moz-appearance: none;
+	/* for Chrome */
+	-webkit-appearance: none;
+	appearance: none;
+}
+
+select::-ms-expand {
+	/* IE */
+	display: none;
+}
+
+button {
+	border: none;
+	background: transparent;
+}
+
+.non-scroll {
+	touch-action: none;
+	-ms-touch-action: none;
+	overflow: hidden;
+	height: 100%;
+}
