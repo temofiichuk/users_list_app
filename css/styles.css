@@ -1,0 +1,35 @@
+body {
+  background: rgb(17, 21, 30);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.load-spinner {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+body.loaded .load-spinner {
+  visibility: hidden;
+  opacity: 0;
+}
+
+#user-modal_form h3 span {
+  display: none;
+}
+
+#user-modal_form form[data-type="add"] h3 .add-user,
+#user-modal_form form[data-type="edit"] h3 .edit-user {
+  display: block;
+}
+
+.error ~ .message {
+  display: block !important;
+}
+
+footer {
+  margin-top: auto;
+}
